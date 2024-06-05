@@ -27,7 +27,7 @@ public partial class vPrincipal : ContentPage
 
             double promedioFinal = (promedioParcial1 + promedioParcial2) / 2;
 
-            DisplayAlert("Nota Final", "La nota final es: " + promedioFinal.ToString(), "Aceptar");
+            DisplayAlert("Estudiante"+datos, "La nota final es: " + promedioFinal.ToString(), "Aceptar");
 
 
         }
