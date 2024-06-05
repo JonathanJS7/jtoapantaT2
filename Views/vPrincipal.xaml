@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jtoapantaPS2.Views.vPrincipal"
+             Title="vPrincipal">
+    <ScrollView>
+    <VerticalStackLayout
+     Spacing="25"
+     Padding="20">
+        <Label 
+         Text="SISTEMA DE CALIFICACIONES"
+         FontSize="20"
+         HorizontalTextAlignment="Center"
+         TextColor="DarkBlue"/>
+
+        <Picker x:Name="pkEstudiantes" Title="Estudiantes">
+            <Picker.Items>
+                 <x:String>Jonathan Toapanta</x:String>
+                 <x:String>Marco Diaz</x:String>
+                 <x:String>Milton Jumbo</x:String>
+                 <x:String>Henry Guallichico</x:String>
+                 <x:String>Andres Bautista</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label 
+         Text="PARCIAL 1"
+         FontSize="15"
+         HorizontalTextAlignment="Start"
+         TextColor="DarkGreen"/>
+
+        <Entry x:Name="txtSeg1"
+         Placeholder="Ingrese la nota de seguimiento 1: "
+         Keyboard="Numeric"
+         MaxLength="3"/>
+
+        <Entry x:Name="txtExa1"
+         Placeholder="Ingrese la nota de Examen 1: "
+         Keyboard="Numeric"
+         MaxLength="3"/>
+
+        <Label 
+         Text="PARCIAL 2"
+         FontSize="15"
+         HorizontalTextAlignment="Start"
+        TextColor="Orange"/>
+
+        <Entry x:Name="txtSeg2"
+         Placeholder="Ingrese la nota de seguimiento 2: "
+         Keyboard="Numeric"
+         MaxLength="3"/>
+
+        <Entry x:Name="txtExa2"
+         Placeholder="Ingrese la nota de Examen 2: "
+         Keyboard="Numeric"
+         MaxLength="3"/>
+
+
+
+        <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy">
+
+
+        </DatePicker>
+
+        <Label 
+         Text="NOTA FINAL"
+         FontSize="15"
+         HorizontalTextAlignment="Start"
+         TextColor="Red"/>
+
+        <Button x:Name="btnCalcular"
+         Text="Calcular"
+         Clicked="btnCalcular_Clicked"/>
+
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
