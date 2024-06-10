@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jtoapantaPS2.Views.vPrincipal"
+             BackgroundColor="White"
              Title="vPrincipal">
     <ScrollView>
     <VerticalStackLayout
@@ -13,7 +14,7 @@
          HorizontalTextAlignment="Center"
          TextColor="DarkBlue"/>
 
-        <Picker x:Name="pkEstudiantes" Title="Estudiantes">
+        <Picker x:Name="pkEstudiantes" Title="Estudiantes" TextColor="DarkBlue">
             <Picker.Items>
                  <x:String>Jonathan Toapanta</x:String>
                  <x:String>Marco Diaz</x:String>
@@ -27,37 +28,35 @@
          Text="PARCIAL 1"
          FontSize="15"
          HorizontalTextAlignment="Start"
-         TextColor="DarkGreen"/>
+         TextColor="DarkRed"/>
 
         <Entry x:Name="txtSeg1"
          Placeholder="Ingrese la nota de seguimiento 1: "
          Keyboard="Numeric"
-         MaxLength="3"/>
+         MaxLength="4"/>
 
         <Entry x:Name="txtExa1"
          Placeholder="Ingrese la nota de Examen 1: "
          Keyboard="Numeric"
-         MaxLength="3"/>
+         MaxLength="4"/>
 
         <Label 
          Text="PARCIAL 2"
          FontSize="15"
          HorizontalTextAlignment="Start"
-        TextColor="Orange"/>
+        TextColor="DarkRed"/>
 
         <Entry x:Name="txtSeg2"
          Placeholder="Ingrese la nota de seguimiento 2: "
          Keyboard="Numeric"
-         MaxLength="3"/>
+         MaxLength="4"/>
 
-        <Entry x:Name="txtExa2"
+            <Entry x:Name="txtExa2"
          Placeholder="Ingrese la nota de Examen 2: "
          Keyboard="Numeric"
-         MaxLength="3"/>
+         MaxLength="4"/>
 
-
-
-        <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy">
+        <DatePicker x:Name="dpFecha" Format="dd/MM/yyyy">
 
 
         </DatePicker>
@@ -66,7 +65,7 @@
          Text="NOTA FINAL"
          FontSize="15"
          HorizontalTextAlignment="Start"
-         TextColor="Red"/>
+         TextColor="DarkRed"/>
 
         <Button x:Name="btnCalcular"
          Text="Calcular"
