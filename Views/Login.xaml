@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jtoapantaPS2.Views.Login"
+             Title="Login">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label 
+            Text="INICIO DE SESION"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="DarkBlue"
+            FontSize="20"/>
+        <Image Source="https://cdn-icons-png.flaticon.com/512/6681/6681204.png"
+               WidthRequest="100"/>
+
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO"
+               HorizontalOptions="Center"
+               FontSize="18"
+               TextColor="DarkBlue"
+               Grid.Row="0"
+               VerticalOptions="Center"
+               Grid.Column="0"/>
+
+            <Entry x:Name="txtUsuario"
+                Placeholder="Ingrese el Usuario: "
+                   HorizontalOptions="Center"
+                Grid.Row="0"
+                Grid.Column="1"/>
+
+            <Label Text="CONTRASEÑA"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="18"
+                TextColor="DarkBlue"
+                Grid.Row="1"
+                Grid.Column="0"/>
+
+
+            <Entry x:Name="txtContrasena"
+                Placeholder="Ingrese la Contraseña: "
+                IsPassword="True"
+                HorizontalOptions="Center"
+                Grid.Row="1"
+                Grid.Column="1"/>
+
+
+        </Grid>
+             <Button x:Name="btnInicio"
+             Text="INICIAR SESION"
+             Clicked="btnInicio_Clicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

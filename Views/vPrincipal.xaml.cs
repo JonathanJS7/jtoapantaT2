@@ -2,9 +2,10 @@ namespace jtoapantaPS2.Views;
 
 public partial class vPrincipal : ContentPage
 {
-	public vPrincipal()
+	public vPrincipal(string usuario)
 	{
 		InitializeComponent();
+        lblNombre.Text = usuario;
 	}
 
     private void btnCalcular_Clicked(object sender, EventArgs e)
